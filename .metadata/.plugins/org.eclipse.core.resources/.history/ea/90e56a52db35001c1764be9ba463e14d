@@ -1,0 +1,30 @@
+package com.boavista.expurgoBilling.connection;
+
+import com.boavista.expurgoBilling.dominio.Produto;
+import com.boavista.expurgoBilling.dominio.ProdutoCliente;
+
+public class Executar {
+
+	public static void main(String[] args) {
+		
+		
+			  Produto produto = new Produto();
+
+			  ProdutoDao daoProduto = new ProdutoDao();
+
+			  daoProduto.remove(produto);
+			  
+			  
+			  
+			  ProdutoCliente produtoCliente = new ProdutoCliente();
+			  
+			  ProdutoClienteDao daoProdutoC = new ProdutoClienteDao();
+			  
+			  daoProdutoC.remove(produtoCliente);
+
+		}
+
+
+	}
+
+
